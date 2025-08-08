@@ -7,9 +7,10 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
+import os
 
 # === НАСТРОЙКИ ===
-API_TOKEN = "7591638229:AAEAeeL_XJM4Sgdv8M-WgTT_NcI5igGpq5g"
+API_TOKEN = os.getenv("BOT_TOKEN")
 
 # Логирование (полезно на Render)
 logging.basicConfig(level=logging.INFO)
